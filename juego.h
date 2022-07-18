@@ -18,6 +18,9 @@ class Juego : public QMainWindow
 public:
     Juego(QWidget *parent = nullptr);
     ~Juego();
+protected:
+    void paintEvent(QPaintEvent *event) override;
+
 
 private slots:
     void on_btnArriba_released();

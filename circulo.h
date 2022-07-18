@@ -13,6 +13,8 @@ public:
 private:
     void movimiento();
     void dibujar();
+    int getX();
+    int getY();
 
 
 };
