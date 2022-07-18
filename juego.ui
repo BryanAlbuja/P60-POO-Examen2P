@@ -16,18 +16,9 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QFrame" name="marco">
-      <property name="minimumSize">
-       <size>
-        <width>500</width>
-        <height>400</height>
-       </size>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>TextLabel</string>
       </property>
      </widget>
     </item>
@@ -56,17 +47,17 @@
        <item>
         <widget class="QWidget" name="widget_2" native="true">
          <layout class="QGridLayout" name="gridLayout">
-          <item row="3" column="1">
-           <widget class="QPushButton" name="btnAbajo">
-            <property name="text">
-             <string>Abajo</string>
-            </property>
-           </widget>
-          </item>
           <item row="2" column="0">
            <widget class="QPushButton" name="btnIzqueirda">
             <property name="text">
              <string>Izquierda</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="btnAbajo">
+            <property name="text">
+             <string>Abajo</string>
             </property>
            </widget>
           </item>

@@ -5,6 +5,7 @@
 #include <QDebug>
 #include "configuracion.h"
 #include "circulo.h"
+#include <QImage>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Juego; }
@@ -35,5 +36,13 @@ private:
     Ui::Juego *ui;
     Circulo *m_circulo;
     void dibujar();
+       QImage *mImagen;        // Imagen sobre la que se va a dibujar
+       QPainter *mPainter;     // Painter de la imagen
+       QPoint mInicial;        // Punto incial para dibujar la línea
+       QPoint mFinal;          // Punto final para dibujar la líne
+       QPoint mTempInic;
+       QPoint mtempFinal;
+       QColor mColor;
+       int mAncho;
 };
 #endif // JUEGO_H

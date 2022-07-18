@@ -4,6 +4,7 @@
 #include <QPoint>
 #include <QPainter>
 
+
 class Circulo : public QPoint
 {
 public:
