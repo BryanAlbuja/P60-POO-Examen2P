@@ -34,5 +34,6 @@ private slots:
 private:
     Ui::Juego *ui;
     Circulo *m_circulo;
+    void dibujar();
 };
 #endif // JUEGO_H
