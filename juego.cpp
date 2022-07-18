@@ -5,13 +5,22 @@ Juego::Juego(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Juego)
 {
-    ui->setupUi(this);
     this->dibujar();
-    QPoint centro = ui->label->geometry();
     m_circulo = new Circulo();
-    m_circulo->setX(centro.x());
-    m_circulo->setY(centro.y());
+   // m_circulo->setX(0,0);
+    //m_circulo->setY(0,0;
 
+    ui->setupUi(this);
+     // Instanciando la imagen (creando)
+     mImagen = new QImage(this->size(),QImage::Format_ARGB32_Premultiplied);
+     // Rellenar la imagen de color blanco
+     mImagen->fill(Qt::white);
+     // Instanciar el Painter a partir de la imagen
+     mPainter = new QPainter(mImagen);
+     mPainter->setRenderHint(QPainter::Antialiasing);
+     // Inicializar otras variables
+     mColor = Qt::black;
+     mAncho = 5;
 }
 
 Juego::~Juego()
